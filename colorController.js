@@ -90,7 +90,7 @@ function getWelcomeResponse(callback) {
     // If we wanted to initialize the session to have some attributes we could add those here.
     const sessionAttributes = {};
     const cardTitle = 'Welcome';
-    const speechOutput = 'Welcome to Rainbow, a color expert to present Alexa API for Internet Programming class at City College of New York.' +
+    const speechOutput = 'Welcome to Rainbow, a color expert to present Alexa API for Internet Programming class at City College of New York, ' +
     'Please tell me your favorite color by saying, my favorite color is red';
     // If the user either does not reply to the welcome message or says something that is not
     // understood, they will be prompted again with this text.

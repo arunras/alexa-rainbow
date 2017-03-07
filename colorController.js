@@ -104,7 +104,7 @@ function getWelcomeResponse(callback) {
 
 function handleSessionEndRequest(callback) {
     const cardTitle = 'Session Ended';
-    const speechOutput = 'Thank you, Arun, for presenting Amazon Alexa to the Internet Programming Class. , Enjoy the rest of semester. Goodbye';
+    const speechOutput = 'Thank you, Arun, for presenting Amazon Alexa to the Internet Programming Class. , Enjoy the rest of semester everyone. Goodbye';
     // Setting this to true ends the session and exits the skill.
     const shouldEndSession = true;
     

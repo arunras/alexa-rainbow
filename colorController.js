@@ -104,7 +104,7 @@ function getWelcomeResponse(callback) {
 
 function handleSessionEndRequest(callback) {
     const cardTitle = 'Session Ended';
-    const speechOutput = 'Thank you Arun for present Amazoe Alexa to the Internet Programming Class. Enjoy the rest of semester!';
+    const speechOutput = 'Thank you, Arun, for presenting Amazon Alexa to the Internet Programming Class. , Enjoy the rest of semester. Goodbye';
     // Setting this to true ends the session and exits the skill.
     const shouldEndSession = true;
     
@@ -156,7 +156,7 @@ function getColorFromSession(intent, session, callback) {
     }
     
     if (favoriteColor) {
-        speechOutput = `Your favorite color is ${favoriteColor}. Goodbye. Am I correct? Tell me another color.`;
+        speechOutput = `Your favorite color is ${favoriteColor}. Am I correct? Tell me another color.`;
         shouldEndSession = false;
     } else {
         speechOutput = "I'm not sure what your favorite color is, you can say, my favorite color " +

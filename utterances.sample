@@ -11,7 +11,7 @@ WhatsMyColorIntent give me my color
 WhatsMyColorIntent what my color is
 WhatsMyColorIntent what my favorite color is
 WhatsMyColorIntent yes
-WhatsMyColorIntent yup
 WhatsMyColorIntent sure
 WhatsMyColorIntent yes please
+
 MyColorIsIntent my favorite color is {Color}

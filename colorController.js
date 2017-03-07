@@ -90,7 +90,7 @@ function getWelcomeResponse(callback) {
     // If we wanted to initialize the session to have some attributes we could add those here.
     const sessionAttributes = {};
     const cardTitle = 'Welcome';
-    const speechOutput = 'Welcome to Alexa API presentation for Internet Programming class. I love this class so much. ' +
+    const speechOutput = 'Welcome to Rainbow, a color expert to present Alexa API for Internet Programming class at City College of New York.' +
     'Please tell me your favorite color by saying, my favorite color is red';
     // If the user either does not reply to the welcome message or says something that is not
     // understood, they will be prompted again with this text.
@@ -104,7 +104,7 @@ function getWelcomeResponse(callback) {
 
 function handleSessionEndRequest(callback) {
     const cardTitle = 'Session Ended';
-    const speechOutput = 'Thank you for trying the Alexa Skills Kit sample. Have a nice day!';
+    const speechOutput = 'Thank you Arun for present Amazoe Alexa to the Internet Programming Class. Enjoy the rest of semester!';
     // Setting this to true ends the session and exits the skill.
     const shouldEndSession = true;
     
@@ -156,8 +156,8 @@ function getColorFromSession(intent, session, callback) {
     }
     
     if (favoriteColor) {
-        speechOutput = `Your favorite color is ${favoriteColor}. Goodbye. It's nice talking to you Arun.`;
-        shouldEndSession = true;
+        speechOutput = `Your favorite color is ${favoriteColor}. Goodbye. Am I correct? Tell me another color.`;
+        shouldEndSession = false;
     } else {
         speechOutput = "I'm not sure what your favorite color is, you can say, my favorite color " +
         ' is red';
